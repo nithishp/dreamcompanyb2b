@@ -10,16 +10,16 @@ const poppins = Poppins({
 
 export const metadata = {
   title: "Dream Company",
-  description: "Join your Dream Company"
+  description: "Join your Dream Company",
 };
 
 export default function RootLayout({ children }) {
   return (
-    <ClerkProvider>
-      <html lang="en">
+    <html lang="en">
+      <ClerkProvider>
         <body className={`${poppins.className}  antialiased`}>{children}</body>
         <Toaster />
-      </html>
-    </ClerkProvider>
+      </ClerkProvider>
+    </html>
   );
 }
